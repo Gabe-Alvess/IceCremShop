@@ -51,4 +51,13 @@ public class Stock {
     public void setMagni(int magni) {
         this.magni = magni;
     }
+
+    @Override
+    public String toString() {
+        return "Stock -> " +
+                "Ice Rockets: " + iceRockets +
+                " -> Cones: " + cones +
+                " -> Balls: " + balls +
+                " -> Magnum: " + magni;
+    }
 }

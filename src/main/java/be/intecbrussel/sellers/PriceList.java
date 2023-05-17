@@ -51,4 +51,12 @@ public class PriceList {
         }
         return magnumPrice;
     }
+
+    @Override
+    public String toString() {
+        return "PriceList -> " +
+                "Ball Price: " + ballPrice +
+                " -> Rocket Price: " + rocketPrice +
+                " -> Magnum Price: " + magnumStandardPrice;
+    }
 }

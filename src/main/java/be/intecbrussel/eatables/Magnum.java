@@ -1,5 +1,7 @@
 package be.intecbrussel.eatables;
 
+import java.util.Objects;
+
 public class Magnum implements Eatable {
     private MagnumType type;
 
@@ -16,7 +18,19 @@ public class Magnum implements Eatable {
 
     @Override
     public void eat() {
-        System.out.println("HUUUUM, I'M EATING A MAGNUM FLAVOR " + type + ".");
+        System.out.print("I'M EATING A MAGNUM FLAVOR " + type + ".");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Magnum magnum)) return false;
+        return type == magnum.type;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type);
     }
 
     public enum MagnumType {

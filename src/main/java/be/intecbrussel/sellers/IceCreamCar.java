@@ -90,30 +90,39 @@ public class IceCreamCar implements IceCreamSeller {
         return totalProfit;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Ice Cream Car" +
+//                "\nList of prices, flavors and stock:" +
+//                "\n\nIce cream ball -> " + priceList.getBallPrice() + " cents" +
+//                "\nStock -> " + stock.getBalls() + " ice cream balls and " + stock.getCones() + " cones" +
+//                "\nIce cream flavors: " +
+//                "\n1." + Cone.Flavor.CHOCOLATE.name().toLowerCase() +
+//                "\n2." + Cone.Flavor.STRACIATELLA.name().toLowerCase() +
+//                "\n3." + Cone.Flavor.VANILLA.name().toLowerCase() +
+//                "\n4." + Cone.Flavor.MOKKA.name().toLowerCase() +
+//                "\n5." + Cone.Flavor.STRAWBERRY.name().toLowerCase() +
+//                "\n6." + Cone.Flavor.LEMON.name().toLowerCase() +
+//                "\n7." + Cone.Flavor.BANANA.name().toLowerCase() +
+//                "\n8." + Cone.Flavor.PISTACHE.name().toLowerCase() +
+//                "\n\nIce rocket -> " + "$" +priceList.getRocketPrice() +
+//                "\nStock: " + stock.getIceRockets() + " ice rockets" +
+//                "\n\nMagnums flavors and price: " +
+//                "\nStock: " + stock.getMagni() + " magnums (1 of each)" +
+//                "\nMilk chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.MILK_CHOCOLATE) +
+//                "\nWhite chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.WHITE_CHOCOLATE) +
+//                "\nBlack chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.BLACK_CHOCOLATE) +
+//                "\nAlpine nuts -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.ALPINE_NUTS) +
+//                "\nRomantic strawberries -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.ROMANTIC_STRAWBERRIES) +
+//                "\n\nToday's total profit: " + String.format("%.2f", totalProfit);
+//    } Te Complex om te gaan testen hahahaha
+
+
     @Override
     public String toString() {
-        return "Ice Cream Car" +
-                "\nList of prices, flavors and stock:" +
-                "\n\nIce cream ball -> " + priceList.getBallPrice() + " cents" +
-                "\nStock -> " + stock.getBalls() + " ice cream balls and " + stock.getCones() + " cones" +
-                "\nIce cream flavors: " +
-                "\n1." + Cone.Flavor.CHOCOLATE.name().toLowerCase() +
-                "\n2." + Cone.Flavor.STRACIATELLA.name().toLowerCase() +
-                "\n3." + Cone.Flavor.VANILLA.name().toLowerCase() +
-                "\n4." + Cone.Flavor.MOKKA.name().toLowerCase() +
-                "\n5." + Cone.Flavor.STRAWBERRY.name().toLowerCase() +
-                "\n6." + Cone.Flavor.LEMON.name().toLowerCase() +
-                "\n7." + Cone.Flavor.BANANA.name().toLowerCase() +
-                "\n8." + Cone.Flavor.PISTACHE.name().toLowerCase() +
-                "\n\nIce rocket -> " + "$" +priceList.getRocketPrice() +
-                "\nStock: " + stock.getIceRockets() + " ice rockets" +
-                "\n\nMagnums flavors and price: " +
-                "\nStock: " + stock.getMagni() + " magnums (1 of each)" +
-                "\nMilk chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.MILK_CHOCOLATE) +
-                "\nWhite chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.WHITE_CHOCOLATE) +
-                "\nBlack chocolate -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.BLACK_CHOCOLATE) +
-                "\nAlpine nuts -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.ALPINE_NUTS) +
-                "\nRomantic strawberries -> " + "$" + priceList.getMagnumPrice(Magnum.MagnumType.ROMANTIC_STRAWBERRIES) +
-                "\n\nToday's total profit: " + String.format("%.2f", totalProfit);
+        return "IceCreamCar -> " +
+                priceList +
+                " -> " + stock +
+                " -> Total Profit: " + totalProfit;
     }
 }
